@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+
+main()
+{
+	int a = 25,b = 32;
+	float pi = 3.1444445555;
+	char ch = 'J';
+
+	clrscr();
+
+	// Datatype variableName;
+
+	printf("A : %d\n",a);
+	printf("B : %d\n",b);
+	printf("PI : %f\nCh : %c",pi,ch);
+
+	getch();
+
+}
