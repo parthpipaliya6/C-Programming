@@ -3,33 +3,36 @@
 
 main()
 {
-       int unit,bill;
-       clrscr();
-       printf("==================\n");
-       printf("Enter your Electricity Unit :");
-       scanf("%d",&unit);
+	float Unit,Bile,Totalbil;
+	clrscr();
 
-       if(unit>=0  &&  unit<=50)
-       {
-	       bill = (unit+0)*0.5 +((unit+0)*0.5)*0.2;
-	       printf("your BILL is %d",bill);
-       }
-       else if(unit>=51  &&  unit<=150)
-       {
-		bill= ((unit-50)*0.75+ 25) +((unit-50)*0.75)*0.2;
-		printf("your BILL is %d",bill);
-       }
-       else if(unit>=151  &&  unit<=250)
-       {
-		bill=((unit-150)*1.20+25+75) +((unit-150)*1.20)*0.2;
-		printf("your BILL is %d",bill);
-       }
-       else
-       {
-		 bill=((unit-250)*1.50+25+75+75) +((unit-150)*1.50)*0.2;
-		 printf("your BILL is %d",bill);
+	printf("Enter your electricity Unit : ");
+	scanf("%f",&Unit);
 
-       }
-       getch();
+	if(Unit <= 50)
+	{
+		B = Unit*0.50 ;
+	}
+	else if(Unit>=51 && Unit<=150)
+	{
+		B = ((Unit-50)*0.75) +25 +((Unit-50)*0.75*0.2) ;
+	}
+	else if(Unit>=151 && Unit<=250)
+	{
+		B = ((Unit-150)*1.20) +(75+25)+((Unit-150)*1.20*0.2);
+	}
+	else if(Unit>=251)
+	{
+		B = ((Unit-250)*1.50) +(120+75+25)+((Unit-150)*1.50*0.2);
+	}
+	else
+	{
+		printf("Invalid input !!");
+	}
 
+	T = B;
+
+	printf("Your Total bill : %.2f Rupees",T);
+
+	getch();
 }
