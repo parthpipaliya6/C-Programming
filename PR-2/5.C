@@ -3,7 +3,7 @@
 
 main()
 {
-	float Unit,Bile,Totalbil;
+	float Unit,B,T;
 	clrscr();
 
 	printf("Enter your electricity Unit : ");
