@@ -8,7 +8,7 @@ main ()
 	printf("Enter N :");
 	scanf("%c",&n);
 
-	if (n>0 && n <='a')
+	if (n>='0' && n <='9')
 	{
 		printf("n is a digit",n);
 	}
