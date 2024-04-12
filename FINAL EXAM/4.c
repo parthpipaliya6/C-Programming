@@ -1,29 +1,23 @@
 #include<stdio.h>
 
-void main ()
+main()
 {
-	int i,size;
-	printf("Enter size of arrya :");
-	scanf("%d",&size);
-	int x[size];
-	int *ptr[size];
+	int i,s;
 	
-	printf("--:array input --:\n");
-	for (i=0;i<size;i++)
+	printf("Enter Size of array : ");
+	scanf("%d",&s);
+	int a[s];
+	
+	printf("\n\n");
+	for(i=0;i<s;i++)
 	{
-		printf("Enter x[%d] :",i);
-		scanf ("%d",&x[i]);
-		ptr[i]= &x[i];
-	}
-	for (i=0;i<=size;i++)
-	{
-		*ptr[i] *= *ptr[i];
-		
+		printf("Enter Value of a[%d] : ",i);
+		scanf("%d",&a[i]);
 	}
 	
-	printf("--square of Array --\n");
-	for (i=0;i<size;i++)
+	printf("\n\nThe Squares are : ");
+	for(i=0;i<s;i++)
 	{
-		printf("x[%d] : %d\n",i,*ptr[i]);
+		printf("%d ",a[i]*a[i]);
 	}
 }
